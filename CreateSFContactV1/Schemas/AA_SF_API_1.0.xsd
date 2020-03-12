@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" targetNamespace="/T1584028014381Converted/JsonSchema" xmlns:tns="/T1584028014381Converted/JsonSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Element" type="tns:Element"/>
+    <xs:complexType name="Element">
+        <xs:sequence>
+            <xs:element name="fname" type="xs:string"/>
+            <xs:element name="lname" type="xs:string"/>
+            <xs:element name="email" type="xs:string"/>
+            <xs:element minOccurs="0" name="phone" type="xs:integer"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="contact-details" type="tns:contact-details"/>
+    <xs:complexType name="contact-details">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="contact" type="tns:contact"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="contact" type="tns:contact"/>
+    <xs:complexType name="contact">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="fname" type="xs:string"/>
+            <xs:element minOccurs="0" name="lname" type="xs:string"/>
+            <xs:element minOccurs="0" name="email" type="xs:string"/>
+            <xs:element minOccurs="0" name="phone" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

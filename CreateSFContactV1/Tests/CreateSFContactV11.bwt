@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<emulation:EmulationData xmlns:emulation="http:///emulation.ecore" isBW="true" location="/CreateSFContactV1/Tests/CreateSFContactV11.bwt">
+  <ProcessNode Id="createsfcontactv1.SubProcess" Name="createsfcontactv1.SubProcess" ModelType="BW" moduleName="CreateSFContactV1">
+    <Assertion Id="fc72d9ce-5a03-4d85-8f26-ef143bcd2bc5" Name="SalesforceCreateAll" hasDecoration="true">
+      <Lang>urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0</Lang>
+      <Expression>
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;urn:partner.soap.sforce.com_createAllOutput&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;SalesforceCreateAll&quot;/>&lt;xsl:template match=&quot;/&quot;>&lt;xsl:choose>&lt;xsl:when test=&quot;=true()&quot;>&lt;result status=&quot;passed&quot; message=&quot;Assertion passed.&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;result status=&quot;failed&quot; message=&quot;Assertion failed.&quot;/>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/xsl:template>&lt;/xsl:stylesheet></Expression>
+      <OriginalExpression>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;urn:partner.soap.sforce.com_createAllOutput&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;SalesforceCreateAll&quot;/>&lt;xsl:template name=&quot;&quot; match=&quot;/&quot;>&lt;Primitive-Assertion>&lt;AssertType>&lt;boolean>&lt;testInput>&lt;xsl:value-of select=&quot;$SalesforceCreateAll/createAllResponse/tns:result[1]/tns:success&quot;/>&lt;/testInput>&lt;goldInput>&lt;xsl:value-of select=&quot;true()&quot;/>&lt;/goldInput>&lt;/boolean>&lt;/AssertType>&lt;/Primitive-Assertion>&lt;/xsl:template>&lt;/xsl:stylesheet></OriginalExpression>
+    </Assertion>
+    <Operation Name="callProcess" serviceName="createsfcontactv1.SubProcess">
+      <Inputs Id="f0f75c39-2668-4bea-924a-44d1a5d02591CreateSFContactV1_createsfcontactv1.SubProcess_callProcess_Start" Name="Start" isDefault="true" type="CALLPROCESS"/>
+    </Operation>
+  </ProcessNode>
+</emulation:EmulationData>

@@ -1,0 +1,19 @@
+{
+    "records": [{
+        "name": "Cloud",
+        "items": [{
+            "localTimestamp": 1584028014000,
+            "localURI": "/CreateSFContactV1/Service Descriptors/AA_SF_API_1.0.json",
+            "disabled": false,
+            "remoteTimestamp": 0,
+            "localHash": "7641cdef5a2e42b049be0611330fa23715354f9d",
+            "remoteId": "593",
+            "remoteHash": "7641cdef5a2e42b049be0611330fa23715354f9d"
+        }],
+        "url": "https://integration.cloud.tibco.com:443"
+    }],
+    "resources": [{
+        "location": "Service Descriptors/createsfcontactv1.Resource-Resource.json",
+        "type": "generated"
+    }]
+}

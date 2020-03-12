@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<emulation:EmulationData xmlns:emulation="http:///emulation.ecore" isBW="true" location="/CreateSFContactV1/Tests/CreateSFContactV12.bwt">
+  <ProcessNode Id="createsfcontactv1.Resource" Name="createsfcontactv1.Resource" ModelType="BW" moduleName="CreateSFContactV1">
+    <Assertion Id="3ae963a7-c62a-45e5-8494-7dfeac9a6609" Name="SubProcess" hasDecoration="true">
+      <Expression>
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns1=&quot;http://www.example.com/namespaces/tns/1584024097599&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;SubProcess&quot;/>&lt;xsl:template match=&quot;/&quot;>&lt;xsl:choose>&lt;xsl:when test=&quot;$SubProcess/tns1:status='ok'&quot;>&lt;result status=&quot;passed&quot; message=&quot;Assertion passed.&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;result status=&quot;failed&quot; message=&quot;Assertion failed.&quot;/>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/xsl:template>&lt;/xsl:stylesheet></Expression>
+      <OriginalExpression>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns1=&quot;http://www.example.com/namespaces/tns/1584024097599&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;SubProcess&quot;/>&lt;xsl:template name=&quot;&quot; match=&quot;/&quot;>&lt;Primitive-Assertion>&lt;AssertType>&lt;string>&lt;testInput>&lt;xsl:value-of select=&quot;$SubProcess/tns1:status&quot;/>&lt;/testInput>&lt;goldInput>&lt;xsl:value-of select=&quot;&amp;quot;ok&amp;quot;&quot;/>&lt;/goldInput>&lt;/string>&lt;/AssertType>&lt;/Primitive-Assertion>&lt;/xsl:template>&lt;/xsl:stylesheet></OriginalExpression>
+    </Assertion>
+  </ProcessNode>
+</emulation:EmulationData>
